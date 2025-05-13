@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="ex001.js" defer></script>
+  <style>
+    .bg-green {
+      background-color: green;
+    }
+    .bg-blue {
+      background-color: rgba(17, 141, 179, 0.548);
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid #333;
+      min-height: 500px;
+    }
+    .container > button {
+      min-width: 250px;
+      height: 40px;
+    }
+
+  </style>
+</head>
+<body onload="carregarCor()">
+  <div>
+    <h2>Selecione a cor de fundo </h2>
+    <div class="container">
+      <button id="btn-01">Azul</button>
+       <button id="btn-02"> verde</button>
+    </div>
+  </div>
+  
+</body>
+</html>

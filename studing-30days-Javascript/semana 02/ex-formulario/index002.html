@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <style>
+    #box-confirm {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      position: relative;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      margin: 5% auto;
+      width: 80%;
+      gap: 10px;
+      max-width: 70%;
+      border: 1px solid black;
+      padding: 15px 20px;
+    }
+    
+    #btn-ver-senha{
+      position: absolute;
+      right: 15px;
+      bottom: 12px;
+      background-color: transparent;
+      border: none;
+      max-width: 70px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .off {
+      background-color: rgba(224, 69, 69, 0.349);
+    }
+    .invalid_message {
+      position: absolute;
+      bottom: 10%;
+      color: red;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+      filter:brightness(50%) ;
+    }
+
+    .ipt {
+      height: 45px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.041);
+      border-radius: 20px;
+      border:2px solid #3333332a;
+    }
+    .ipt:hover {
+      box-shadow: 0px 10px 20px rgba(111, 111, 241, 0.548);
+    }
+    #btn-send {
+      max-width: 250px;
+      height: 45px;
+      border-radius: 40px;
+      background-image: linear-gradient(to right, rgb(255, 176, 30),rgba(255, 255, 0, 0.603));
+      border: transparent;
+      cursor: pointer;
+      transform: scale(1.015);;
+    }
+    #btn-send:hover{
+      box-shadow: 0px 20px 30px rgba(46, 21, 21, 0.151);
+    }
+
+  </style>
+  <script src="ex002.js" defer></script>
+</head>
+<body>
+  <div>
+    <form action="" class="form">
+      <label for="name">Nome</label>
+      <input type="text" name="name" id="ipt-name" class="ipt">
+      <div id="message"></div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="ipt-email" class="ipt">
+
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="ipt-senha" class="ipt">
+      <div id="box-confirm">
+        <label for="confirm-senha">Confirme a senha</label>
+        <input type="password" name="confirm-senha"   id="ipt-email" class="ipt">
+        <button id="btn-ver-senha" type="button">👁️‍🗨️</button>
+
+      </div>
+     
+     
+      <button type="button" id="btn-send">Enviar</button>
+    </form>
+  </div>
+  
+</body>
+</html>

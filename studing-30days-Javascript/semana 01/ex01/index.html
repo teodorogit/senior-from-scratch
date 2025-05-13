@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="ex001.js" defer></script>
+    </head>
+    <body>
+        <div><h1>Exercício 1</h1></div>
+        <div>
+            <label for="">Temperatura em</label>
+
+            <select name="" id="cards">
+                <option id="default" value="" disabled>Tipo de medição</option>
+                <option id="value1" value="1">Celsius</option>
+                <option id="value2" value="2">Farenheight</option>
+                <option id="value3" value="3">Kelvin</option>
+            </select>
+            <input type="number" id="comparacao" placeholder="Digite a temperatura" />
+            <button type="button" onclick="verificar()">Converter</button>
+        </div>
+        <div>
+            <h2>Conversão</h2>
+
+            <div id="resultado">Resultado:</div>
+        </div>
+    </body>
+</html>
