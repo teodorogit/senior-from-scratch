@@ -1,4 +1,4 @@
-# 🧠 scratch-to-senior
+# 🧠 senior-from-scratch
 
 Este repositório é uma jornada pessoal de evolução na programação, saindo do zero (_scratch_) até um nível avançado (_senior_). Aqui você encontrará uma coleção de **desafios resolvidos**, **exercícios de lógica e algoritmos**, além de **projetos práticos** utilizando **JavaScript**, **Vue.js** e **Flutter**.
 
